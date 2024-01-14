@@ -1,0 +1,51 @@
+/* Responsive By Media Query For Mobile Devices */
+@media screen and (max-width:576px) {
+    header{
+        width: 100%;
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav h1{
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 1.5rem;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    nav ul{
+        gap: 15px;
+    }
+    .primary-btn{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Responsive By Media Query For Tablet Devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav h1{
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    nav ul{
+        gap: 70px;
+    }
+    .primary-btn{
+        padding: 15px 20px;
+    }
+}
