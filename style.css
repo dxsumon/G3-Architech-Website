@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/* Shared-Style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary-btn {
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+/* Header-Style */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.log-in{
+    color: #fff;
+}
+nav ul li:last-child{
+    background-color: #FF900E;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+nav ul li:last-child:hover{
+    transform: scale(1.3);
+    background-color: #ff7247;
+}
+nav ul a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* Banner-section */
+
+.banner-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.primary-description {
+    color: #727272;
+}
+
+/* Responsive By Media Query For Mobile Devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav h1{
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    nav ul{
+        gap: 15px;
+    }
+    .primary-btn{
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Responsive By Media Query For Tablet Devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav h1{
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    nav ul{
+        gap: 70px;
+    }
+    .primary-btn{
+        padding: 15px 20px;
+    }
+}
