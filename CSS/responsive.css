@@ -2,7 +2,6 @@
 @media screen and (max-width:576px) {
     header{
         width: 100%;
-        padding: 20px;
     }
     nav{
         flex-direction: column;
@@ -22,6 +21,28 @@
     .primary-btn{
         font-size: 1rem;
         padding: 10px 15px;
+    }
+    .team-container{
+        flex-direction: column-reverse;
+    }
+    .team-container,
+    .primary-btn{
+        margin: 15px 0;
+    }
+    .team-image{
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+    .team-image img:hover{
+        object-fit: cover;
+        transform: scale(1.4);
+        border-radius: 50%;
+        border: 15px solid white;
+    }
+    .team-description{
+        padding: 10px;
+        text-align: center;
+        margin: 0;
     }
 }
 
@@ -47,5 +68,28 @@
     }
     .primary-btn{
         padding: 15px 20px;
+    }
+    /* main-section */
+    .team-container{
+        flex-direction: column-reverse;
+    }
+    .team-container,
+    .primary-btn{
+        margin: 15px 0;
+    }
+    .team-image{
+        margin-top: 0;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .team-image img:hover{
+        object-fit: cover;
+        transform: scale(1.4);
+        border-radius: 50%;
+        border: 15px solid white;
+    }
+    .team-description{
+        padding: 10px;
+        text-align: center;
+        margin: 0;
     }
 }

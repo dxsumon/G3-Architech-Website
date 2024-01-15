@@ -23,7 +23,7 @@ header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 0;
 }
-header,main,footer{
+.container, main,footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -93,14 +93,36 @@ nav ul a {
 /* Main-Section */
 .team-container{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
-
+.primary-btn{
+   margin-left: 0;
+}
 .team-image{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    margin-top: 85px;
 }
-
-
+.team-description{
+    margin-left: 70px;
+}
+.team-description h3{
+    padding-bottom: 24px;
+}
+.quick-list{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.of-our{
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
+.features{
+    font-size: 2.8rem;
+    color: #FF900E;
+    font-weight: 700;
+}
