@@ -23,14 +23,18 @@ header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 0;
 }
-.container, main,footer{
-    max-width: 1440px;
+.container, main{
+    max-width: 1240px;
     margin: 0 auto;
 }
 nav {
+    background-color: #fff4e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    z-index: 5;
+    top: 0;
 }
 
 nav h1, .facts h3{
@@ -134,8 +138,10 @@ nav ul a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .reward{
+    flex-basis: 241px;
     border-radius: 8px;
     border: 1px solid #FF900E;
     width: 241px;
@@ -145,4 +151,10 @@ nav ul a {
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+footer{
+    text-align: center;
+    background-color: #fff4e6;
+    width: 100%;
+    padding: 40px 0;
 }
